@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="codewars practise 2">
-      <change afterPath="$PROJECT_DIR$/lists,tuples,sets,dictionaries.py" afterDir="false" />
+    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="starting a python roadmap.lists sets etc">
+      <change afterPath="$PROJECT_DIR$/arrays.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +46,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.arrays.executor": "Run",
     "Python.bin.executor": "Run",
     "Python.eureka number.executor": "Run",
     "Python.exceptions.executor": "Run",
@@ -170,7 +171,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747251260946</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="starting a python roadmap.lists sets etc">
+      <option name="closed" value="true" />
+      <created>1747404792661</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747404792661</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,6 +217,7 @@
     <MESSAGE value="addin guess the word game" />
     <MESSAGE value="codewars practise" />
     <MESSAGE value="codewars practise 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="codewars practise 2" />
+    <MESSAGE value="starting a python roadmap.lists sets etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting a python roadmap.lists sets etc" />
   </component>
 </project>
