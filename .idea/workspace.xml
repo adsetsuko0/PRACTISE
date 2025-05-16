@@ -4,27 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="adding guessthepassword to project" />
+    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="codewars practise 2">
+      <change afterPath="$PROJECT_DIR$/lists,tuples,sets,dictionaries.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "adsetsuko0"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;adsetsuko0&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/adsetsuko0/PRACTISE.git",
-    "accountId": "b70da7d1-e5c1-42a5-b2d1-4980f027840b"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/adsetsuko0/PRACTISE.git&quot;,
+    &quot;accountId&quot;: &quot;b70da7d1-e5c1-42a5-b2d1-4980f027840b&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -36,10 +46,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.bin.executor": "Run",
+    "Python.eureka number.executor": "Run",
+    "Python.exceptions.executor": "Run",
+    "Python.func.executor": "Run",
+    "Python.funcs.executor": "Run",
+    "Python.guess the word.executor": "Run",
+    "Python.lists,tuples,sets,dictionaries.executor": "Run",
+    "Python.numer guessing gamepy.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/erema/practise",
+    "last_opened_file_path": "C:/Users/erema/.1PYTHON/ptactice17feb2025",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -120,7 +138,39 @@
       <option name="project" value="LOCAL" />
       <updated>1747240968719</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding .idea to gitignore">
+      <option name="closed" value="true" />
+      <created>1747243213221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747243213221</updated>
+    </task>
+    <task id="LOCAL-00009" summary="addin guess the word game">
+      <option name="closed" value="true" />
+      <created>1747249810582</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747249810583</updated>
+    </task>
+    <task id="LOCAL-00010" summary="codewars practise">
+      <option name="closed" value="true" />
+      <created>1747250854539</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747250854540</updated>
+    </task>
+    <task id="LOCAL-00011" summary="codewars practise 2">
+      <option name="closed" value="true" />
+      <created>1747251260945</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747251260946</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +204,10 @@
     <MESSAGE value="renamind stepikpractise to numb quessing game" />
     <MESSAGE value="adding BOH to project" />
     <MESSAGE value="adding guessthepassword to project" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding guessthepassword to project" />
+    <MESSAGE value="adding .idea to gitignore" />
+    <MESSAGE value="addin guess the word game" />
+    <MESSAGE value="codewars practise" />
+    <MESSAGE value="codewars practise 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="codewars practise 2" />
   </component>
 </project>
