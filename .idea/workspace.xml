@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="starting a python roadmap.lists sets etc">
-      <change afterPath="$PROJECT_DIR$/moduls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymodule" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mymodule.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/os.py" afterDir="false" />
+    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="adding modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/moduls.py" beforeDir="false" afterPath="$PROJECT_DIR$/moduls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747415083876</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="adding modules">
+      <option name="closed" value="true" />
+      <created>1747417449091</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747417449092</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -231,6 +236,7 @@
     <MESSAGE value="codewars practise" />
     <MESSAGE value="codewars practise 2" />
     <MESSAGE value="starting a python roadmap.lists sets etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting a python roadmap.lists sets etc" />
+    <MESSAGE value="adding modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding modules" />
   </component>
 </project>

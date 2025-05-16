@@ -25,3 +25,6 @@ print(d.datetime.now().time())
 #custome module
 import mymodule as my
 print(my.name)
+
+from cowsay import say
+print(say('Hey'))
