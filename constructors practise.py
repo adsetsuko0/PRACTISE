@@ -1,0 +1,263 @@
+from datetime import MAXYEAR
+
+
+class Addition:
+    first=0
+    second=0
+    summa=0
+
+    def __init__(self,f,s):
+        self.first=f
+        self.second=s
+
+    def vyvod(self):
+        print('First num:',self.first)
+        print('Second num:', self.second)
+        print('Addition of two these:', self.summa)
+
+    def calculate(self):
+        self.summa=self.first + self.second
+
+
+nums=Addition(40,30)
+nums.calculate()
+nums.vyvod()
+
+class MyClass:
+    def __init__(self,name=None):
+        if name is None:
+            print('The default constructor called')
+        else:
+            self.name=name
+            print('The parametrised constructor called')
+
+    def method(self):
+        if hasattr(self,'name'):
+            print('The method is called with name', self.name)
+        else:
+            print('The method\'s called without a name')
+
+obj1=MyClass()
+obj2=MyClass('Anna')
+obj2.method()
+
+class Vector:
+    MIN=0
+    MAX=100
+
+    def __init__(self,x,y):
+        self.x=self.y=0
+        if Vector.validate(x) and Vector.validate(y):
+            self.x=x
+            self.y=y
+
+
+    @classmethod
+    def validate(cls,arg):
+        return cls.MIN<= arg<= cls.MAX
+
+res=Vector.validate(5)
+print(res)
+
+
+class MyClass:
+    def __init__(self, arg1, arg2):
+        self.arg1 = arg1
+        self.arg2 = arg2
+
+    @classmethod
+    def create_from_list(cls, arg_list):
+        return cls(arg_list[0], arg_list[1])
+
+
+mylist=[1,6,79,42,678]
+obj=MyClass.create_from_list(mylist)
+print(obj.arg2)
+
+class MyClass:
+    class_attr='class_attr_value'
+
+    @classmethod
+    def method1(cls):
+        print(cls.class_attr)
+
+MyClass.method1()
+
+class Point3D:
+    coordinates=[]
+    def __init__(self,x,y,z):
+        self.x=x
+        self.y=y
+        self.z=z
+
+    def get_list(self):
+        if type(self.x)==int and type(self.y)==int and type(self.z)==int:
+            Point3D.coordinates.append(self.x)
+            Point3D.coordinates.append(self.y)
+            Point3D.coordinates.append(self.z)
+        else:
+            print('Wrong type!')
+
+
+
+
+
+class Dog:
+    def __init__(self,name):
+        self.name=name
+        self.tricks=[]
+
+    def tricksadd(self,trick):
+        self.tricks.append(trick)
+
+
+b=Dog('Bobby')
+b.tricksadd('Roll over')
+print(b.tricks)
+
+class Father:
+    def __init__(self,name,lastname):
+        self.name=name
+        self.lastname=lastname
+
+    def printname(self):
+        print(self.name,self.lastname)
+
+class Son(Father):
+    pass
+
+tom=Son('Tom','Huesos')
+tom.printname()
+
+
+class Father:
+    def __init__(self,name,lastname):
+        self.name=name
+        self.lastname=lastname
+
+    def printname(self):
+        print(self.name,self.lastname)
+
+class Son(Father):
+    def __init__(self,name,lastname):
+        super().__init__(name,lastname)
+
+
+x=Son('Make','User')
+x.printname()
+
+
+class Geom:
+    name='geom'
+
+    def __init__(self):
+        print('Geom initializator')
+class Line(Geom):
+    def draw(self):
+        print('Drawing a line')
+i=Line()
+
+
+class Human:
+    def __init__(self,name,lastname):
+        self.name=name
+        self.lastname=lastname
+
+    def printname(self):
+        print('Tha\'s a superclass')
+
+class Person(Human):
+    def printname(self):
+        super().printname()
+        print('That\'s a subclass')
+
+x=Person('Anna',"Ermak")
+x.printname()
+
+class Person:
+    def __init__(self,name):
+        self.name=name
+
+class Student(Person):
+    def __init__(self,name):
+        Person.__init__(self,name)
+
+
+y=Student('Anna')
+
+class Computer:
+    def __init__(self,computer,ram,ssd):
+        self.computer=computer
+        self.ram=ram
+        self.ssd=ssd
+
+
+class Laptop(Computer):
+    def __init__(self,computer,ram,ssd,model):
+        super().__init__(computer,ram,ssd)
+        self.model=model
+
+lenovo=Laptop('Lenovo',2,512,1420)
+print('This computer is:', lenovo.computer)
+print('This computer has ram of', lenovo.ram)
+print('This computer has ssd of', lenovo.ssd)
+print('This computer has this model:', lenovo.model)
+
+
+class Rectangle:
+    def __init__(self,width,length):
+        self.length=length
+        self.width=width
+
+    def area(self):
+        return self.length*self.width
+
+    def perimeter(self):
+        return 2*self.length+2*self.width
+
+class Square(Rectangle):
+    def __init__(self,length):
+        super().__init__(length,length)
+
+sqr=Square(4)
+print('Area of the square is ',sqr.area())
+
+
+class A:
+    def __init__(self):
+        print('Initializing class A')
+
+    def sub_method(self,b):
+        print('Sub_method from class A:',b)
+
+class B(A):
+    def __init__(self):
+        print('Initializing class B')
+        super().__init__()
+
+    def sub_method(self,b):
+        print('Sub_method from class B:',b)
+        super().sub_method(b+1)
+
+class X(B):
+    def __init__(self):
+        print('Initializing class X')
+        super().__init__()
+
+    def sub_method(self,b):
+        print('Sub_method from class X:',b)
+        super().sub_method(b+1)
+
+class Y(X):
+    def __init__(self):
+        print('Initializing class Y')
+        super(X, self).__init__()
+
+    def sub_method(self,b):
+        print('Sub_method from class Y:',b)
+        super().sub_method(b+1)
+
+x = X()
+x.sub_method(1)
+y=Y()
+y.sub_method(5)

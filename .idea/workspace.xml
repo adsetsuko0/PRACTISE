@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="adding modules 2">
-      <change afterPath="$PROJECT_DIR$/classes.py" afterDir="false" />
+    <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="starting OOP">
+      <change afterPath="$PROJECT_DIR$/constructors practise.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arrays.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,7 @@
     "Python.arrays.executor": "Run",
     "Python.bin.executor": "Run",
     "Python.classes.executor": "Run",
+    "Python.constructors practise.executor": "Run",
     "Python.eureka number.executor": "Run",
     "Python.exceptions.executor": "Run",
     "Python.func.executor": "Run",
@@ -62,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/erema/.1PYTHON/ptactice17feb2025",
+    "last_opened_file_path": "C:/Users/erema/practise",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
@@ -207,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747428937050</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="starting OOP">
+      <option name="closed" value="true" />
+      <created>1747835506009</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747835506009</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +256,7 @@
     <MESSAGE value="starting a python roadmap.lists sets etc" />
     <MESSAGE value="adding modules" />
     <MESSAGE value="adding modules 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding modules 2" />
+    <MESSAGE value="starting OOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="starting OOP" />
   </component>
 </project>
