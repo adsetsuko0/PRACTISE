@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753dc118-dc02-473f-8101-4e327c8632d3" name="Changes" comment="starting inheritance">
+      <change afterPath="$PROJECT_DIR$/incapsulation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constructors practise.py" beforeDir="false" afterPath="$PROJECT_DIR$/constructors practise.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,28 +44,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.arrays.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.classes.executor&quot;: &quot;Run&quot;,
-    &quot;Python.constructors practise.executor&quot;: &quot;Run&quot;,
-    &quot;Python.eureka number.executor&quot;: &quot;Run&quot;,
-    &quot;Python.exceptions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.func.executor&quot;: &quot;Run&quot;,
-    &quot;Python.funcs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.guess the word.executor&quot;: &quot;Run&quot;,
-    &quot;Python.lists,tuples,sets,dictionaries.executor&quot;: &quot;Run&quot;,
-    &quot;Python.moduls.executor&quot;: &quot;Run&quot;,
-    &quot;Python.numer guessing gamepy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.os.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/erema/practise&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.arrays.executor": "Run",
+    "Python.bin.executor": "Run",
+    "Python.classes.executor": "Run",
+    "Python.constructors practise.executor": "Run",
+    "Python.eureka number.executor": "Run",
+    "Python.exceptions.executor": "Run",
+    "Python.func.executor": "Run",
+    "Python.funcs.executor": "Run",
+    "Python.guess the word.executor": "Run",
+    "Python.incapsulation.executor": "Run",
+    "Python.lists,tuples,sets,dictionaries.executor": "Run",
+    "Python.moduls.executor": "Run",
+    "Python.numer guessing gamepy.executor": "Run",
+    "Python.os.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/erema/practise",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\erema\practise" />
@@ -223,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748182959920</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="starting inheritance">
+      <option name="closed" value="true" />
+      <created>1748265538995</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1748265538995</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
