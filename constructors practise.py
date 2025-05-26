@@ -85,21 +85,40 @@ MyClass.method1()
 
 class Point3D:
     coordinates=[]
-    def __init__(self,x,y,z):
+    def __init__(self,x=0,y=0,z=0): #атрибуты класса
         self.x=x
         self.y=y
         self.z=z
 
     def get_list(self):
-        if type(self.x)==int and type(self.y)==int and type(self.z)==int:
+        if type(self.x)==int and type(self.y)==int and type(self.z)==int: #проверка типов данных
             Point3D.coordinates.append(self.x)
             Point3D.coordinates.append(self.y)
             Point3D.coordinates.append(self.z)
         else:
             print('Wrong type!')
 
+    def get_cords(self):
+        res_str=(self.x,self.y,self.z)  #координаты в виде кортежа
+        return res_str
 
+    def change_cords(self):
+        try:
+            x_str, y_str, z_str = input("Введите новые координаты для " + str(self.__doc__) + "\n").split()
+            self.x = int(x_str)
+            self.y = int(y_str)
+            self.z = int(z_str)
+        except ValueError:
+            print("Ошибка:требуется ввести ТРИ целых числа через пробел.")
 
+class Point(Point3D):
+    pass
+
+pt1 = Point3D(5, 2, 5)
+pt2 = Point3D(2, 6, 3)
+pt3 = Point3D(2, 5, "s")
+pt4 = Point(*pt1.get_cords())
+pt5 = Point()
 
 
 class Dog:
@@ -261,3 +280,140 @@ x = X()
 x.sub_method(1)
 y=Y()
 y.sub_method(5)
+
+
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def __str__(self):
+        return f'Person:{self.name}, age:{self.age}'
+
+    def __eq__(self, other):
+        if isinstance(other,Person):
+            return self.age==other.age
+        return NotImplemented
+
+    def __ne__(self, other):
+        if isinstance(other, Person):
+            return self.age != other.age
+        return NotImplemented
+
+    def __lt__(self, other):
+        if isinstance(other, Person):
+            return self.age < other.age
+        return NotImplemented
+
+    def __le__(self, other):
+        if isinstance(other, Person):
+            return self.age <= other.age
+        return NotImplemented
+
+    def __gt__(self, other):
+        if isinstance(other, Person):
+            return self.age > other.age
+        return NotImplemented
+
+    def __ge__(self, other):
+        if isinstance(other, Person):
+            return self.age >= other.age
+        return NotImplemented
+
+
+
+
+
+
+
+
+person1=Person('Alice',20)
+person2=Person('Tom',18)
+person3=Person('Bob',27)
+print(f"{person1} == {person2}: {person1 == person2}")
+print(f"{person1} != {person2}: {person1 != person2}")
+print(f"{person2} < {person1}: {person2 < person1}")
+print(f"{person2} <= {person3}: {person2 <= person3}")
+print(f"{person1} > {person2}: {person1 > person2}")
+print(f"{person1} >= {person3}: {person1 >= person3}")
+
+class Vector:
+    def __init__(self,x,y,z):
+        self.x=x
+        self.y=y
+        self.z=z
+
+    def __str__(self):
+        return f'Vector {self.x},{self.y},{self.z}'
+
+    def __add__(self, other):
+        if isinstance(other,Vector):
+            return Vector(self.x+other.x,self.y+other.y,self.z+other.z)
+
+    def __sub__(self, other):
+        if isinstance(other, Vector):
+            return Vector(self.x - other.x, self.y - other.y, self.z - other.z)
+        return NotImplemented
+
+    def __mul__(self, other):
+        if isinstance(other, (int, float)):
+            # Умножение на скаляр
+            return Vector(self.x * other, self.y * other, self.z * other)
+        return NotImplemented
+
+    def __truediv__(self, other):
+        if isinstance(other, (int, float)):
+            if other == 0:
+                raise ValueError("Деление на ноль недопустимо.")
+            return Vector(self.x / other, self.y / other, self.z / other)
+        return NotImplemented
+
+        # Чтобы работало умножение скаляр * вектор
+
+    def __rmul__(self, other):
+        return self.__mul__(other)
+
+    # Пример использования
+v1 = Vector(1, 2, 3)
+v2 = Vector(4, 5, 6)
+
+print(v1 + v2)
+print(v1 - v2)
+print(v1 * 2)
+print(3 * v2)
+print(v2 / 2)
+
+
+
+class Vehicle:
+    def __init__(self, marka, model, year, value):
+        self.marka=marka
+        self.model=model
+        self.year=year
+        self.value=value
+
+    def display_info(self):
+        print(f'The vehicle {self.marka},the model {self.model} of {self.year} was {self.value}')
+
+
+class Car(Vehicle):
+    def __init__(self,marka,model,year,value,doors):
+        super().__init__(marka,model,year,value)
+        self.doors=doors
+
+    def display_info(self):
+        print(f'The car {self.marka},the model {self.model} of {self.year} was {self.value}')
+
+class Truck(Vehicle):
+    def __init__(self,marka,model,year,value,length):
+        super().__init__(marka,model,year,value)
+        self.length=length
+
+    def display_info(self):
+        print(f'The truck {self.marka},the model {self.model} of {self.year} was {self.value} has the length about'
+              f' {self.length}')
+
+car = Car("Toyota", "Camry", 2022, 2900000, 4, )
+truck = Truck("Ford", "F-MAX", 2023, 6000000, 6162)
+car.display_info()
+truck.display_info()
