@@ -146,5 +146,50 @@ print(carA.car_count,carA.name)
 print(carB.car_count)
 
 
+class A:
+    def __init__(self):
+        self.val='init'
+class B(A):
+    def __new__(cls, self):
+        self.val='new'
+        return self
 
+c=B(A())
+print(c.val)
 
+class A:
+    def __init__(self):
+        self.val='init'
+class B(A):
+    def __new__(cls):
+        return super().__new__(B)
+
+c=B()
+print(c.val)
+
+class Person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+
+    def __str__(self):
+       return f'Name:{self.name}   Age:{self.age}'
+
+class Employee(Person):
+    def __init__(self,name,age,position):
+        super().__init__(name,age)
+        self.position=position
+
+    def __str__(self):
+        return f'{super().__str__()}  Position:{self.position}'
+
+emp=Employee('Alice',40,'developer')
+print(emp)
+
+class DefaultDict(dict):
+    def __missing__(self, key):
+        return key
+
+d=DefaultDict({1:1})
+d[2]=d[3]
+print(d)
