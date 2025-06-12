@@ -193,3 +193,40 @@ class DefaultDict(dict):
 d=DefaultDict({1:1})
 d[2]=d[3]
 print(d)
+
+
+num=10
+new_num=num.__add__(5)
+print(new_num)
+
+class Employee:
+    def __init__(self):
+        self.name='Swati'
+        self.salary=10000
+
+    def __str__(self):
+        return 'name='+self.name+', salary=$'+str(self.salary)
+
+e1 = Employee()
+print(e1)
+
+class Distance:
+    def __init__(self,x=None,y=None):
+        self.ft=x
+        self.inch=y
+    def __add__(self, x):
+        temp=Distance()
+        temp.ft= self.ft + x.ft
+        temp.inch= self.inch + x.inch
+        if temp.inch>=12:
+            temp.ft+=1
+            temp.inch-=12
+            return temp
+    def __str__(self):
+        return 'ft:' + str(self.ft) + ' in: ' + str(self.inch)
+d1=Distance(3,10)
+d2=Distance(4,4)
+print("d1= {} d2={}".format(d1, d2))
+
+d3=d1+d2
+print(d3)
